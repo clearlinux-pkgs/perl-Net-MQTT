@@ -4,7 +4,7 @@
 #
 Name     : perl-Net-MQTT
 Version  : 1.163170
-Release  : 1
+Release  : 2
 URL      : https://cpan.metacpan.org/authors/id/B/BE/BEANZ/Net-MQTT-1.163170.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/B/BE/BEANZ/Net-MQTT-1.163170.tar.gz
 Summary  : 'Perl modules for MQTT Protocol (http://mqtt.org/)'
@@ -88,9 +88,9 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Net-MQTT
 cp LICENSE %{buildroot}/usr/share/package-licenses/perl-Net-MQTT/LICENSE
 if test -f Makefile.PL; then
-make pure_install PERL_INSTALL_ROOT=%{buildroot}
+make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
-./Build install --installdirs=site --destdir=%{buildroot}
+./Build install --installdirs=vendor --destdir=%{buildroot}
 fi
 find %{buildroot} -type f -name .packlist -exec rm -f {} ';'
 find %{buildroot} -depth -type d -exec rmdir {} 2>/dev/null ';'
@@ -99,25 +99,25 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT.pod
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT/Constants.pm
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT/Message.pm
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT/Message/ConnAck.pm
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT/Message/Connect.pm
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT/Message/Disconnect.pm
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT/Message/JustMessageId.pm
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT/Message/PingReq.pm
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT/Message/PingResp.pm
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT/Message/PubAck.pm
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT/Message/PubComp.pm
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT/Message/PubRec.pm
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT/Message/PubRel.pm
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT/Message/Publish.pm
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT/Message/SubAck.pm
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT/Message/Subscribe.pm
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT/Message/UnsubAck.pm
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT/Message/Unsubscribe.pm
-/usr/lib/perl5/site_perl/5.26.1/Net/MQTT/TopicStore.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT.pod
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Constants.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/ConnAck.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/Connect.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/Disconnect.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/JustMessageId.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/PingReq.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/PingResp.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/PubAck.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/PubComp.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/PubRec.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/PubRel.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/Publish.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/SubAck.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/Subscribe.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/UnsubAck.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/Unsubscribe.pm
+/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/TopicStore.pm
 
 %files bin
 %defattr(-,root,root,-)
@@ -148,11 +148,11 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 /usr/share/man/man3/Net::MQTT::TopicStore.3
 
 %files license
-%defattr(-,root,root,-)
+%defattr(0644,root,root,0755)
 /usr/share/package-licenses/perl-Net-MQTT/LICENSE
 
 %files man
-%defattr(-,root,root,-)
+%defattr(0644,root,root,0755)
 /usr/share/man/man1/net-mqtt-pub.1
 /usr/share/man/man1/net-mqtt-sub.1
 /usr/share/man/man1/net-mqtt-trace.1
