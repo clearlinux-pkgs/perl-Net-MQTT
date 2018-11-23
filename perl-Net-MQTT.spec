@@ -4,7 +4,7 @@
 #
 Name     : perl-Net-MQTT
 Version  : 1.163170
-Release  : 2
+Release  : 3
 URL      : https://cpan.metacpan.org/authors/id/B/BE/BEANZ/Net-MQTT-1.163170.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/B/BE/BEANZ/Net-MQTT-1.163170.tar.gz
 Summary  : 'Perl modules for MQTT Protocol (http://mqtt.org/)'
