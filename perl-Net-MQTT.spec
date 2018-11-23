@@ -99,25 +99,25 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT.pod
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Constants.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/ConnAck.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/Connect.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/Disconnect.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/JustMessageId.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/PingReq.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/PingResp.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/PubAck.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/PubComp.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/PubRec.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/PubRel.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/Publish.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/SubAck.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/Subscribe.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/UnsubAck.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/Message/Unsubscribe.pm
-/usr/lib/perl5/vendor_perl/5.26.1/Net/MQTT/TopicStore.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT.pod
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT/Constants.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT/Message.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT/Message/ConnAck.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT/Message/Connect.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT/Message/Disconnect.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT/Message/JustMessageId.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT/Message/PingReq.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT/Message/PingResp.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT/Message/PubAck.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT/Message/PubComp.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT/Message/PubRec.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT/Message/PubRel.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT/Message/Publish.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT/Message/SubAck.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT/Message/Subscribe.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT/Message/UnsubAck.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT/Message/Unsubscribe.pm
+/usr/lib/perl5/vendor_perl/5.28.0/Net/MQTT/TopicStore.pm
 
 %files bin
 %defattr(-,root,root,-)
