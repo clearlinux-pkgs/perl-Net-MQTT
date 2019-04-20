@@ -4,7 +4,7 @@
 #
 Name     : perl-Net-MQTT
 Version  : 1.163170
-Release  : 8
+Release  : 9
 URL      : https://cpan.metacpan.org/authors/id/B/BE/BEANZ/Net-MQTT-1.163170.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/B/BE/BEANZ/Net-MQTT-1.163170.tar.gz
 Summary  : 'Perl modules for MQTT Protocol (http://mqtt.org/)'
@@ -28,7 +28,6 @@ SYNOPSIS
 Summary: bin components for the perl-Net-MQTT package.
 Group: Binaries
 Requires: perl-Net-MQTT-license = %{version}-%{release}
-Requires: perl-Net-MQTT-man = %{version}-%{release}
 
 %description bin
 bin components for the perl-Net-MQTT package.
@@ -39,6 +38,7 @@ Summary: dev components for the perl-Net-MQTT package.
 Group: Development
 Requires: perl-Net-MQTT-bin = %{version}-%{release}
 Provides: perl-Net-MQTT-devel = %{version}-%{release}
+Requires: perl-Net-MQTT = %{version}-%{release}
 
 %description dev
 dev components for the perl-Net-MQTT package.
