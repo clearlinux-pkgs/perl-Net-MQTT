@@ -4,7 +4,7 @@
 #
 Name     : perl-Net-MQTT
 Version  : 1.163170
-Release  : 11
+Release  : 12
 URL      : https://cpan.metacpan.org/authors/id/B/BE/BEANZ/Net-MQTT-1.163170.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/B/BE/BEANZ/Net-MQTT-1.163170.tar.gz
 Summary  : 'Perl modules for MQTT Protocol (http://mqtt.org/)'
@@ -151,22 +151,22 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT.pod
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT/Constants.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT/Message.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT/Message/ConnAck.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT/Message/Connect.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT/Message/Disconnect.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT/Message/JustMessageId.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT/Message/PingReq.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT/Message/PingResp.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT/Message/PubAck.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT/Message/PubComp.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT/Message/PubRec.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT/Message/PubRel.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT/Message/Publish.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT/Message/SubAck.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT/Message/Subscribe.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT/Message/UnsubAck.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT/Message/Unsubscribe.pm
-/usr/lib/perl5/vendor_perl/5.30.2/Net/MQTT/TopicStore.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT.pod
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT/Constants.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT/Message.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT/Message/ConnAck.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT/Message/Connect.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT/Message/Disconnect.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT/Message/JustMessageId.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT/Message/PingReq.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT/Message/PingResp.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT/Message/PubAck.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT/Message/PubComp.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT/Message/PubRec.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT/Message/PubRel.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT/Message/Publish.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT/Message/SubAck.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT/Message/Subscribe.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT/Message/UnsubAck.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT/Message/Unsubscribe.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Net/MQTT/TopicStore.pm
